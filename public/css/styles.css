@@ -1,0 +1,23 @@
+
+body {
+    background-color: #EAC926;
+}
+p.cuerpos_de_texto {
+    font-size: 12px;
+};
+
+h3.titulares {
+    font-size: 200px;
+};
+
+.precios {
+    font-size: 18px;
+};
+
+.descuentos {
+    font-size: 16px;
+}
+
+.descripciones {
+    font-size: 16px;
+}
