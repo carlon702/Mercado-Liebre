@@ -1,23 +1,102 @@
-
-body {
-    background-color: #EAC926;
+:root {
+    --main-amarillo: #EAC926;
+    --main-azul: #03264C;
+    --main-Celeste: #1259c3;
+    --main-gris-oscuro: #666;
+    --main-gris-claro: #ebebeb;
+    --main-verde: #39b54a;
 }
-p.cuerpos_de_texto {
-    font-size: 12px;
-};
-
-h3.titulares {
-    font-size: 200px;
-};
-
-.precios {
+#logo_ML{
+    margin: 10px;
+    width: 40%;
+}
+h3.titulares{
+    font-size: 24px;
+}
+.texto_header_centrar{
+    text-align: center;
+}
+nav ul{
+    padding-left: 0;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+.precios{
     font-size: 18px;
-};
+}
 
-.descuentos {
+p.descuentos{
     font-size: 16px;
 }
 
-.descripciones {
+.descripcion_producto{
     font-size: 16px;
 }
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #EAC926;
+    font-size: 12px;
+}
+#barra-de-busqueda{
+    font-size: 12px;
+}
+#burguer{
+    background-color: #1259c3;
+    color: #ebebeb;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    width: 32px;
+    height: 32px;
+    font-size: 22px;
+    border-radius: 10%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+
+}
+#banner {
+    display: flex;
+    margin: 0px;
+    width: 100%;
+  }
+
+.imagen_producto {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+h4{
+    font-size: 13px;
+
+}
+#primera-seccion-footer{
+    padding-top: 4em;
+}
+.footer_iconos{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:#1259c3
+}
+
+footer{
+    text-align: center;
+    background-color: #ebebeb;
+    background-size: auto;
+    
+}
+footer section{
+    margin:3em;
+}
+footer section h4{
+    margin:0em
+}
+footer section p{
+    margin:0em;
+}
+
