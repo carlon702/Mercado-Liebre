@@ -37,6 +37,8 @@ p.descuentos{
 
 .descripcion_producto{
     font-size: 16px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 body{
@@ -70,9 +72,10 @@ body{
   }
 
 .imagen_producto {
-    display: flex;
-    width: 100%;
     text-align: center;
+    width: 80%;
+    
+    
 }
 h4{
     font-size: 13px;
@@ -102,4 +105,32 @@ footer section h4{
 footer section p{
     margin:0em;
 }
+main {
+    text-align: center;
+    width: 90vw;
+    margin: auto;
 
+    
+}
+main article{
+    margin-bottom: 10px;
+    padding-bottom: 0.25rem;
+    background-color: white;
+    background-size: cover;
+}
+main section article div{
+    border-top: solid 1px #ebebeb;
+    text-align: left;
+    
+
+}
+main section article div p{
+    margin: 15px;
+}
+.logo-camion{
+
+    font-size:1.2rem;
+    margin-left:1rem;
+    color: #39b54a;
+    margin-top: 1rem;
+}
