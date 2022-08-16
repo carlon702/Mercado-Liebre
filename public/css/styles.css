@@ -6,6 +6,9 @@
     --main-gris-claro: #ebebeb;
     --main-verde: #39b54a;
 }
+*{
+    box-sizing: border-box;
+}
 #logo_ML{
     margin: 10px;
     width: 40%;
