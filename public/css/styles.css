@@ -1,107 +1,288 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    margin: 0;
-    background-color: #ebebeb;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  margin: 0;
+  background-color: #ebebeb;
+  margin: auto;
 }
 /*header css*/
 
 header {
-    background-color: #EAC926;
+  background-color: #eac926;
 }
 .upper-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
 }
 .logo {
-    margin: 3% 0 0 1%;
-    width: 55%;
-    padding: 2%;
+  margin: 10px 5px 0 5px;
+  width: 50%;
+  max-width: 220px;
+  flex-grow: 0.5;
 }
-#searchbar{
-    width: 50%;
-    margin-left: 1%;
+.seachbar-container {
+  flex-grow: 0.5;
+  width: 50%;
+  padding: 0 5px 0 5px;
 }
-.fa-search {
-    font-size: 14px;
-    border: solid 1px;
-    background-color: #ebebeb;
-    padding: 0.5%;
-}
-.nav-bar{
-    display: none;
-}
-
-.burger-menu{
-    text-align: center;
+.searchbar {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 100%;
+  text-align: center;
+  position: relative;
 }
 
-div.burger-menu i{
-    background-color: #0044AA;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 20px;
-    height: 40px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
-    width: 40px;
-    text-align: center;
+#searchbar {
+  width: 100%;
+  padding: 6px;
+  border: solid 0;
+  border-radius: 3px;
+  margin: auto;
 }
 
-.banner{
-    width: 100%;
+#searchbar:focus {
+  outline: 0 none;
+  border: 3px solid #0044aa;
+}
+.search-button {
+  background-color: #ffff;
+  color: #666;
+  font-size: 15px;
+  border-style: none;
+  padding: 0.5%;
+  position: absolute;
+  top: 5px;
+  right: 0.8px;
+  cursor: pointer;
+}
+.header-text {
+  text-align: center;
+  padding: 1.5%;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 320px;
+}
+.nav-bar {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-bar ul li {
+  list-style-type: none;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: #222222;
+  display: inline-block;
+  padding: 5px 0;
+}
+.burger-menu {
+  text-align: center;
+}
+
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
 }
 
 /*Main css*/
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+.main-article {
+  border-top: solid 1px #ebebeb;
+  margin: 15px 0px 15px 0px;
+  position: relative;
+}
 
-h3{
-    font-size: 24px;
+.products article {
+  margin-top: 10px;
+  width: 90%;
+  background-color: white;
+  border-radius: 3%;
 }
-.prices{
-    font-size: 18px;
-    flex-grow: 0.3;
-    margin: 0;
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #ebebeb;
 }
-main section article img{
-    width: 100%;
+h3 {
+  font-size: 24px;
+  text-align: left;
+  color: #666;
 }
-main section article i, .discount {
-    font-size: 16px;
-    color: #39b54a;
-    flex-grow: 0.7;
-    margin: 0;
+.prices {
+  font-size: 18px;
+  flex-grow: 0.3;
+  margin: 0;
 }
-.product-description{
-    font-size: 16px;
-    line-height: normal;
-    color: #ffff;
-    margin: -15px 0 0 0;
-    display: block;
+main section article img {
+  width: 100%;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
 }
-main section div.products article:hover i{
-    transform: rotate(-90deg);
+main section article i,
+.discount {
+  font-size: 16px;
+  color: #39b54a;
+  flex-grow: 0.7;
+  margin: 0;
+}
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.product-description {
+  font-size: 16px;
+  line-height: normal;
+  color: #666;
+  text-align: center;
+  display: none;
+}
+main section div.products article:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+main section div.products article:hover i {
+  transform: rotate(-90deg);
+}
+main section div.products article:hover .product-description {
+  display: block;
 }
 
 /*footer css*/
 
+footer {
+  background-color: #fff;
+  padding: 2px 0;
+}
+.footer {
+  text-align: center;
+  margin-top: 10%;
+}
 .footer-icon {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #1259c3;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1259c3;
+  transition: color 450ms;
 }
 
 .footer-description {
-    margin: 0 10% 6% 10%;
-    color: #666;
+  margin: 0 10% 6% 10%;
+  color: #666;
 }
 
-.copyright {
-    text-align: left;
-    padding: 3%;
-    color: #666;
+.footer-copyright {
+  text-align: left;
+  margin-left: 3%;
+  color: #666;
+}
+.footer-icon:hover {
+  color: #39b54a;
+}
+
+/*Media queries*/
+
+@media (min-width: 361px) {
+  .products article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 45%;
+  }
+
+  header {
+    padding-bottom: 5px;
+  }
+  .product-description {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .products article {
+    width: 22.5%;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-nav {
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .second-nav {
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-bar a {
+    font-size: 15px;
+  }
+  .nav-bar li {
+    margin: 10px 10px 0 10px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+  .logo {
+    max-width: 220px;
+    flex-grow: 0.3;
+  }
+  .searchbar-container {
+    flex-basis: 0.3;
+    max-width: none;
+  }
+  .header-text {
+    flex-basis: 0.3;
+    max-width: none;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer-description {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .nav-bar,
+  .upper-header {
+    max-width: 1200px;
+    margin: auto;
+  }
 }
