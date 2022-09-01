@@ -37,10 +37,9 @@ input:focus {
   border-radius: 0.25rem;
   background-color: #007bff;
   color: white;
-  transition: background-color 0.15s ease-in-out, top 0.15s ease-in-out;
+  transition: background-color 450ms;
   width: 50%;
   height: 35px;
-  font-family: "Times New Roman", Times, serif;
   font-size: 25px;
   cursor: pointer;
 }

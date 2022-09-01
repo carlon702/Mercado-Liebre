@@ -49,13 +49,13 @@
     <main class="login">
     <form action="/" method="GET">
         <div class="input">
-        <input class="login-input" type="text" name="user-login" id="user-login" placeholder="Nombre de usuario" required>
+        <input class="login-input" type="text" name="user-login" id="user-login" placeholder="Nombre de usuario" required minlength="5">
       </div></form>
       <div class="input">
-        <input class="login-input" type="password" name="login-password" id="login-password" placeholder="Introduce tu contraseña" required>
+        <input class="login-input" type="password" name="login-password" id="login-password" placeholder="Introduce tu contraseña" required minlength="5">
       </div>
       <div class='button-container'>
-        <button class="login-submit" type="submit"><a class='enviar'href="/">Enviar</a></button>
+        <button class="login-submit" type="submit" ><a class='enviar'href="/">Enviar</a></button>
       </div>
       <div class="bottom-links">
       <p><a href="/register" class="register">Crear cuenta</a></p>
